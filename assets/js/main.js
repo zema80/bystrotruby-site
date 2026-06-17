@@ -53,7 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
     body.classList.toggle('is-locked', open || body.classList.contains('mobile-menu-open'));
     if (open && pageUrlInput) pageUrlInput.value = window.location.href;
   }
-  modalButtons.forEach((button) => button.addEventListener('click', () => setModal(true)));
+  modalButtons.forEach((button) => button.addEventListener('click', (event) => {
+    if (button.tagName === 'A') event.preventDefault();
+    setModal(true);
+  }));
   modalClosers.forEach((closer) => closer.addEventListener('click', () => setModal(false)));
   if (requestForm) {
     requestForm.addEventListener('submit', (event) => {
