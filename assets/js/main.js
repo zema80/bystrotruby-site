@@ -62,6 +62,31 @@ document.addEventListener('DOMContentLoaded', () => {
       if (formMessage) formMessage.textContent = 'Форма пока не подключена. Здесь будет отправка заявки.';
     });
   }
+  const tocLinks = document.querySelectorAll('.commercial-toc__link[href^="#"]');
+  const tocSections = Array.from(tocLinks)
+    .map((link) => document.querySelector(link.getAttribute('href')))
+    .filter(Boolean);
+  tocLinks.forEach((link) => {
+    link.addEventListener('click', (event) => {
+      const target = document.querySelector(link.getAttribute('href'));
+      if (!target) return;
+      event.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      history.replaceState(null, '', link.getAttribute('href'));
+    });
+  });
+  if (tocLinks.length && 'IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      const activeEntry = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!activeEntry) return;
+      tocLinks.forEach((link) => {
+        link.classList.toggle('is-active', link.getAttribute('href') === `#${activeEntry.target.id}`);
+      });
+    }, { rootMargin: '-20% 0px -65% 0px', threshold: [0, .25, .5, 1] });
+    tocSections.forEach((section) => observer.observe(section));
+  }
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') {
       setModal(false);
