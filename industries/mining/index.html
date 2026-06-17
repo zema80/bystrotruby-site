@@ -9,8 +9,8 @@
 <body>
 <header class="site-header">
   <div class="topbar">
-    <div class="container topbar-inner">
-      <nav class="topbar-nav" aria-label="Верхнее меню">
+    <div class="container topbar__inner">
+      <nav class="topbar__nav" aria-label="Верхнее меню">
         <a href="/bystrotruby-site/legal/">Юридическая информация</a>
         <a href="/bystrotruby-site/blog/">Блог</a>
         <a href="/bystrotruby-site/company/">О компании</a>
@@ -19,154 +19,403 @@
     </div>
   </div>
   <div class="brandbar">
-    <div class="container brandbar-inner">
-      <a class="site-logo" href="/bystrotruby-site/">Быстроразъемные трубопроводы РФ</a>
+    <div class="container brandbar__inner">
+      <a class="site-logo" href="/bystrotruby-site/" aria-label="Быстроразъемные трубопроводы РФ">
+        <img src="/bystrotruby-site/assets/img/logo.webp" alt="Быстроразъемные трубопроводы РФ">
+      </a>
       <div class="site-tagline">Проектирование и поставка быстроразъемных трубопроводов для промышленности</div>
       <div class="site-contacts">
         <a href="tel:88001017120">8-800-101-71-20</a>
         <a href="mailto:po-almash@mail.ru">po-almash@mail.ru</a>
       </div>
-      <a class="btn btn-primary js-open-request" href="#request">Отправить заказ</a>
+      <div class="social-links" aria-label="Социальные сети">
+        <a href="tg://resolve?domain=poalmash">Telegram</a>
+        <a href="#">MAX</a>
+      </div>
+      <button class="btn btn-primary js-open-request" type="button">Отправить заказ</button>
+      <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">Меню</button>
     </div>
   </div>
   <div class="menubar">
     <div class="container">
       <nav class="main-nav" aria-label="Основное меню">
         <ul class="nav-list">
-          <li class="nav-item">
-            <a href="/bystrotruby-site/">Главная</a>
-          </li>
-          <li class="nav-item has-submenu">
-            <a href="/bystrotruby-site/solutions/">Решения</a>
-            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Открыть подменю Решения"></button>
-            <ul class="submenu">
-              <li><a href="/bystrotruby-site/solutions/dewatering/">Водопонижение</a></li>
-              <li><a href="/bystrotruby-site/solutions/water-drainage/">Водоотлив</a></li>
-              <li><a href="/bystrotruby-site/solutions/water-supply/">Подача воды</a></li>
-              <li><a href="/bystrotruby-site/solutions/irrigation-melioration/">Орошение и мелиорация</a></li>
-              <li><a href="/bystrotruby-site/solutions/irrigation-melioration/field-irrigation/">Орошение полей</a></li>
-              <li><a href="/bystrotruby-site/solutions/irrigation-melioration/irrigation-machines/">Дождевальные машины</a></li>
-              <li><a href="/bystrotruby-site/solutions/irrigation-melioration/mobile-irrigation-networks/">Мобильные оросительные сети</a></li>
-              <li><a href="/bystrotruby-site/solutions/dust-suppression/">Пылеподавление</a></li>
-              <li><a href="/bystrotruby-site/solutions/slurry-pumping/">Перекачка пульпы</a></li>
-              <li><a href="/bystrotruby-site/solutions/sludge-pumping/">Перекачка шламов</a></li>
-              <li><a href="/bystrotruby-site/solutions/ash-slag-removal/">Гидрозолоудаление</a></li>
-              <li><a href="/bystrotruby-site/solutions/concrete-supply/">Подача бетонной смеси</a></li>
-              <li><a href="/bystrotruby-site/solutions/backfill-supply/">Подача закладочной смеси</a></li>
-              <li><a href="/bystrotruby-site/solutions/fire-water-supply/">Пожарное водоснабжение</a></li>
-              <li><a href="/bystrotruby-site/solutions/snowmaking/">Системы оснежения</a></li>
-            </ul>
-          </li>
-          <li class="nav-item has-submenu">
-            <a href="/bystrotruby-site/industries/">Отрасли</a>
-            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Открыть подменю Отрасли"></button>
-            <ul class="submenu">
-              <li><a href="/bystrotruby-site/industries/mining/">Быстроразъемные трубопроводы для горнодобывающей промышленности</a></li>
-              <li><a href="/bystrotruby-site/industries/construction/">Быстроразъемные трубопроводы для строительства</a></li>
-              <li><a href="/bystrotruby-site/industries/agriculture/">Быстроразъемные трубопроводы для сельского хозяйства</a></li>
-              <li><a href="/bystrotruby-site/industries/oil-and-gas/">Быстроразъемные трубопроводы для нефтегазовой отрасли</a></li>
-              <li><a href="/bystrotruby-site/industries/energy/">Быстроразъемные трубопроводы для энергетики</a></li>
-              <li><a href="/bystrotruby-site/industries/utilities-waterworks/">Быстроразъемные трубопроводы для ЖКХ и водоканалов</a></li>
-              <li><a href="/bystrotruby-site/industries/metallurgy/">Быстроразъемные трубопроводы для металлургии</a></li>
-              <li><a href="/bystrotruby-site/industries/chemical-industry/">Быстроразъемные трубопроводы для химической промышленности</a></li>
-            </ul>
-          </li>
-          <li class="nav-item has-submenu">
-            <a href="/bystrotruby-site/constructions/">Конструкции</a>
-            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Открыть подменю Конструкции"></button>
-            <ul class="submenu">
-              <li><a href="/bystrotruby-site/constructions/quick-release-pipelines/">Быстроразъемные трубопроводы</a></li>
-              <li><a href="/bystrotruby-site/constructions/brs-pipelines/">Трубопроводы на БРС</a></li>
-              <li><a href="/bystrotruby-site/constructions/hinged-clamp-pipelines/">Трубопроводы на шарнирных хомутах</a></li>
-              <li><a href="/bystrotruby-site/constructions/bauer-pipelines/">Трубопроводы Bauer</a></li>
-              <li><a href="/bystrotruby-site/constructions/camlock-pipelines/">Трубопроводы Camlock</a></li>
-              <li><a href="/bystrotruby-site/constructions/quick-assembly-pipelines/">Быстросборные трубопроводы</a></li>
-              <li><a href="/bystrotruby-site/constructions/modular-pipelines/">Сборно-разборные трубопроводы</a></li>
-              <li><a href="/bystrotruby-site/constructions/mobile-pipelines/">Мобильные трубопроводы</a></li>
-              <li><a href="/bystrotruby-site/constructions/temporary-pipelines/">Временные трубопроводы</a></li>
-              <li><a href="/bystrotruby-site/constructions/field-pipelines/">Полевые трубопроводы</a></li>
-              <li><a href="/bystrotruby-site/constructions/high-pressure-pipelines/">Высоконапорные быстроразъемные трубопроводы</a></li>
-            </ul>
-          </li>
-          <li class="nav-item has-submenu">
-            <a href="/bystrotruby-site/materials/">Материалы труб</a>
-            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Открыть подменю Материалы труб"></button>
-            <ul class="submenu">
-              <li><a href="/bystrotruby-site/materials/steel-pipes/">Стальные трубы для быстроразъемных трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/materials/galvanized-pipes/">Оцинкованные трубы для быстроразъемных трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/materials/stainless-pipes/">Нержавеющие трубы для быстроразъемных трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/materials/hdpe-pipes/">ПНД трубы для быстроразъемных трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/materials/rubber-hoses/">Резиновые трубы и рукава для быстроразъемных трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/materials/aluminum-pipes/">Алюминиевые трубы для быстроразъемных трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/materials/composite-pipes/">Композитные трубы для быстроразъемных трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/materials/combined-pipelines/">Комбинированные трубопроводы</a></li>
-              <li><a href="/bystrotruby-site/materials/combined-pipelines/steel-hdpe/">Комбинированные трубопроводы из стали и ПНД</a></li>
-              <li><a href="/bystrotruby-site/materials/combined-pipelines/steel-rubber-hoses/">Комбинированные трубопроводы из стали и резиновых рукавов</a></li>
-              <li><a href="/bystrotruby-site/materials/combined-pipelines/hdpe-rubber-hoses/">Комбинированные трубопроводы из ПНД и резиновых рукавов</a></li>
-              <li><a href="/bystrotruby-site/materials/combined-pipelines/metal-composite/">Трубопроводы из металла и композитных участков</a></li>
-            </ul>
-          </li>
-          <li class="nav-item has-submenu">
-            <a href="/bystrotruby-site/catalog/">Каталог</a>
-            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Открыть подменю Каталог"></button>
-            <ul class="submenu">
-              <li><a href="/bystrotruby-site/catalog/pipes/">Трубы</a></li>
-              <li><a href="/bystrotruby-site/catalog/pipes/du50/">Трубы Ду50 для быстроразъемных трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/catalog/pipes/du80/">Трубы Ду80 для быстроразъемных трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/catalog/pipes/du100/">Трубы Ду100 для быстроразъемных трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/catalog/pipes/du150/">Трубы Ду150 для быстроразъемных трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/catalog/pipes/du200/">Трубы Ду200 для быстроразъемных трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/catalog/pipes/du250/">Трубы Ду250 для быстроразъемных трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/catalog/pipes/du300/">Трубы Ду300 для быстроразъемных трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/catalog/pipes/du400/">Трубы Ду400 для быстроразъемных трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/catalog/quick-couplings/">Соединения</a></li>
-              <li><a href="/bystrotruby-site/catalog/quick-couplings/hinged-clamps/">Шарнирные хомуты для трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/catalog/quick-couplings/bauer/">Соединения Bauer</a></li>
-              <li><a href="/bystrotruby-site/catalog/quick-couplings/camlock/">Соединения Camlock</a></li>
-              <li><a href="/bystrotruby-site/catalog/quick-couplings/yoke-couplings/">Бугельные соединения</a></li>
-              <li><a href="/bystrotruby-site/catalog/quick-couplings/grooved-couplings/">Соединения Грувлок</a></li>
-              <li><a href="/bystrotruby-site/catalog/quick-couplings/victaulic/">Соединения Виктаулик</a></li>
-              <li><a href="/bystrotruby-site/catalog/fittings/">Фасонные элементы</a></li>
-              <li><a href="/bystrotruby-site/catalog/fittings/bends/">Отводы для быстроразъемных трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/catalog/fittings/tees/">Тройники для быстроразъемных трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/catalog/fittings/adapters/">Переходы для быстроразъемных трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/catalog/fittings/end-caps/">Заглушки для быстроразъемных трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/catalog/valves/">Арматура</a></li>
-              <li><a href="/bystrotruby-site/catalog/valves/check-valves/">Обратные клапаны для быстроразъемных трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/catalog/valves/shutoff-valves/">Запорная арматура для быстроразъемных трубопроводов</a></li>
-            </ul>
-          </li>
-          <li class="nav-item has-submenu">
-            <a href="/bystrotruby-site/company/">О компании</a>
-            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Открыть подменю О компании"></button>
-            <ul class="submenu">
-              <li><a href="/bystrotruby-site/company/production/">Производство быстроразъемных трубопроводов</a></li>
-              <li><a href="/bystrotruby-site/company/certificates/">Сертификаты</a></li>
-              <li><a href="/bystrotruby-site/company/delivery/">Доставка</a></li>
-              <li><a href="/bystrotruby-site/company/payment/">Условия оплаты</a></li>
-              <li><a href="/bystrotruby-site/company/contacts/">Контакты</a></li>
-            </ul>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="/bystrotruby-site/">Главная</a></li>
+          <li class="nav-item has-mega">
+            <a class="nav-link" href="/bystrotruby-site/solutions/">Решения</a>
+          <div class="mega-menu" role="region" aria-label="Решения">
+            <div class="mega-menu__tabs" role="tablist">
+              <button class="mega-menu__tab is-active" type="button" role="tab" aria-selected="true" data-mega-tab="решения-tab-0">По задачам</button>
+              <button class="mega-menu__tab" type="button" role="tab" aria-selected="false" data-mega-tab="решения-tab-1">Орошение</button>
+            </div>
+              <div class="mega-menu__panel is-active" data-mega-panel="решения-tab-0">
+                <div class="mega-menu__grid">
+                  <a class="mega-menu__link" href="/bystrotruby-site/solutions/dewatering/">Водопонижение</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/solutions/water-drainage/">Водоотлив</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/solutions/water-supply/">Подача воды</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/solutions/dust-suppression/">Пылеподавление</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/solutions/slurry-pumping/">Перекачка пульпы</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/solutions/sludge-pumping/">Перекачка шламов</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/solutions/ash-slag-removal/">Гидрозолоудаление</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/solutions/concrete-supply/">Подача бетонной смеси</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/solutions/backfill-supply/">Подача закладочной смеси</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/solutions/fire-water-supply/">Пожарное водоснабжение</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/solutions/snowmaking/">Оснежение</a>
+                </div>
+              </div>
+              <div class="mega-menu__panel" data-mega-panel="решения-tab-1" hidden>
+                <div class="mega-menu__grid">
+                  <a class="mega-menu__link" href="/bystrotruby-site/solutions/irrigation-melioration/">Орошение и мелиорация</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/solutions/irrigation-melioration/field-irrigation/">Орошение полей</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/solutions/irrigation-melioration/irrigation-machines/">Дождевальные машины</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/solutions/irrigation-melioration/mobile-irrigation-networks/">Мобильные оросительные сети</a>
+                </div>
+              </div>
+          </div>          </li>
+          <li class="nav-item has-mega">
+            <a class="nav-link" href="/bystrotruby-site/industries/">Отрасли</a>
+          <div class="mega-menu" role="region" aria-label="Отрасли">
+            <div class="mega-menu__tabs" role="tablist">
+              <button class="mega-menu__tab is-active" type="button" role="tab" aria-selected="true" data-mega-tab="отрасли-tab-0">Промышленность</button>
+              <button class="mega-menu__tab" type="button" role="tab" aria-selected="false" data-mega-tab="отрасли-tab-1">Инфраструктура и хозяйство</button>
+            </div>
+              <div class="mega-menu__panel is-active" data-mega-panel="отрасли-tab-0">
+                <div class="mega-menu__grid">
+                  <a class="mega-menu__link" href="/bystrotruby-site/industries/mining/">Горнодобывающая промышленность</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/industries/oil-and-gas/">Нефтегазовая отрасль</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/industries/energy/">Энергетика</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/industries/metallurgy/">Металлургия</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/industries/chemical-industry/">Химическая промышленность</a>
+                </div>
+              </div>
+              <div class="mega-menu__panel" data-mega-panel="отрасли-tab-1" hidden>
+                <div class="mega-menu__grid">
+                  <a class="mega-menu__link" href="/bystrotruby-site/industries/construction/">Строительство</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/industries/agriculture/">Сельское хозяйство</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/industries/utilities-waterworks/">ЖКХ и Водоканалы</a>
+                </div>
+              </div>
+          </div>          </li>
+          <li class="nav-item has-mega">
+            <a class="nav-link" href="/bystrotruby-site/constructions/">Конструкции</a>
+          <div class="mega-menu" role="region" aria-label="Конструкции">
+            <div class="mega-menu__tabs" role="tablist">
+              <button class="mega-menu__tab is-active" type="button" role="tab" aria-selected="true" data-mega-tab="конструкции-tab-0">По способу соединения</button>
+              <button class="mega-menu__tab" type="button" role="tab" aria-selected="false" data-mega-tab="конструкции-tab-1">По типу системы</button>
+            </div>
+              <div class="mega-menu__panel is-active" data-mega-panel="конструкции-tab-0">
+                <div class="mega-menu__grid">
+                  <a class="mega-menu__link" href="/bystrotruby-site/constructions/brs-pipelines/">Трубопроводы на БРС</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/constructions/hinged-clamp-pipelines/">Трубопроводы на шарнирных хомутах</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/constructions/bauer-pipelines/">Трубопроводы Bauer</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/constructions/camlock-pipelines/">Трубопроводы Camlock</a>
+                </div>
+              </div>
+              <div class="mega-menu__panel" data-mega-panel="конструкции-tab-1" hidden>
+                <div class="mega-menu__grid">
+                  <a class="mega-menu__link" href="/bystrotruby-site/constructions/quick-release-pipelines/">Быстроразъемные трубопроводы</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/constructions/quick-assembly-pipelines/">Быстросборные трубопроводы</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/constructions/modular-pipelines/">Сборно-разборные трубопроводы</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/constructions/mobile-pipelines/">Мобильные трубопроводы</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/constructions/temporary-pipelines/">Временные трубопроводы</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/constructions/field-pipelines/">Полевые трубопроводы</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/constructions/high-pressure-pipelines/">Высоконапорные трубопроводы</a>
+                </div>
+              </div>
+          </div>          </li>
+          <li class="nav-item has-mega">
+            <a class="nav-link" href="/bystrotruby-site/materials/">Материалы труб</a>
+          <div class="mega-menu" role="region" aria-label="Материалы труб">
+            <div class="mega-menu__tabs" role="tablist">
+              <button class="mega-menu__tab is-active" type="button" role="tab" aria-selected="true" data-mega-tab="материалы-труб-tab-0">Материалы</button>
+              <button class="mega-menu__tab" type="button" role="tab" aria-selected="false" data-mega-tab="материалы-труб-tab-1">Комбинированные</button>
+            </div>
+              <div class="mega-menu__panel is-active" data-mega-panel="материалы-труб-tab-0">
+                <div class="mega-menu__grid">
+                  <a class="mega-menu__link" href="/bystrotruby-site/materials/steel-pipes/">Стальные трубы</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/materials/galvanized-pipes/">Оцинкованные трубы</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/materials/stainless-pipes/">Нержавеющие трубы</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/materials/hdpe-pipes/">ПНД трубы</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/materials/rubber-hoses/">Резиновые трубы и рукава</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/materials/aluminum-pipes/">Алюминиевые трубы</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/materials/composite-pipes/">Композитные трубы</a>
+                </div>
+              </div>
+              <div class="mega-menu__panel" data-mega-panel="материалы-труб-tab-1" hidden>
+                <div class="mega-menu__grid">
+                  <a class="mega-menu__link" href="/bystrotruby-site/materials/combined-pipelines/">Комбинированные трубопроводы</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/materials/combined-pipelines/steel-hdpe/">Сталь и ПНД</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/materials/combined-pipelines/steel-rubber-hoses/">Сталь и резиновые рукава</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/materials/combined-pipelines/hdpe-rubber-hoses/">ПНД и резиновые рукава</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/materials/combined-pipelines/metal-composite/">Металл и композитные участки</a>
+                </div>
+              </div>
+          </div>          </li>
+          <li class="nav-item has-mega">
+            <a class="nav-link" href="/bystrotruby-site/catalog/">Каталог</a>
+          <div class="mega-menu" role="region" aria-label="Каталог">
+            <div class="mega-menu__tabs" role="tablist">
+              <button class="mega-menu__tab is-active" type="button" role="tab" aria-selected="true" data-mega-tab="каталог-tab-0">Трубы</button>
+              <button class="mega-menu__tab" type="button" role="tab" aria-selected="false" data-mega-tab="каталог-tab-1">Соединения</button>
+              <button class="mega-menu__tab" type="button" role="tab" aria-selected="false" data-mega-tab="каталог-tab-2">Фасонные элементы и арматура</button>
+            </div>
+              <div class="mega-menu__panel is-active" data-mega-panel="каталог-tab-0">
+                <div class="mega-menu__grid">
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/pipes/">Трубы</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/pipes/du50/">Трубы Ду50</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/pipes/du80/">Трубы Ду80</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/pipes/du100/">Трубы Ду100</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/pipes/du150/">Трубы Ду150</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/pipes/du200/">Трубы Ду200</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/pipes/du250/">Трубы Ду250</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/pipes/du300/">Трубы Ду300</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/pipes/du400/">Трубы Ду400</a>
+                </div>
+              </div>
+              <div class="mega-menu__panel" data-mega-panel="каталог-tab-1" hidden>
+                <div class="mega-menu__grid">
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/quick-couplings/">Быстроразъемные соединения</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/quick-couplings/hinged-clamps/">Шарнирные хомуты</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/quick-couplings/bauer/">Соединения Bauer</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/quick-couplings/camlock/">Соединения Camlock</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/quick-couplings/yoke-couplings/">Бугельные соединения</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/quick-couplings/grooved-couplings/">Соединения Грувлок</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/quick-couplings/victaulic/">Соединения Виктаулик</a>
+                </div>
+              </div>
+              <div class="mega-menu__panel" data-mega-panel="каталог-tab-2" hidden>
+                <div class="mega-menu__grid">
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/fittings/">Фасонные элементы</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/fittings/bends/">Отводы</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/fittings/tees/">Тройники</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/fittings/adapters/">Переходы</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/fittings/end-caps/">Заглушки</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/valves/">Арматура</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/valves/check-valves/">Обратные клапаны</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/catalog/valves/shutoff-valves/">Запорная арматура</a>
+                </div>
+              </div>
+          </div>          </li>
+          <li class="nav-item has-mega">
+            <a class="nav-link" href="/bystrotruby-site/company/">О компании</a>
+          <div class="mega-menu" role="region" aria-label="О компании">
+            <div class="mega-menu__tabs" role="tablist">
+              <button class="mega-menu__tab is-active" type="button" role="tab" aria-selected="true" data-mega-tab="о-компании-tab-0">Компания</button>
+            </div>
+              <div class="mega-menu__panel is-active" data-mega-panel="о-компании-tab-0">
+                <div class="mega-menu__grid">
+                  <a class="mega-menu__link" href="/bystrotruby-site/company/production/">Производство</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/company/certificates/">Сертификаты</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/company/delivery/">Доставка</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/company/payment/">Условия оплаты</a>
+                  <a class="mega-menu__link" href="/bystrotruby-site/company/contacts/">Контакты</a>
+                </div>
+              </div>
+          </div>          </li>
         </ul>
       </nav>
     </div>
   </div>
+  <div class="mobile-overlay" data-mobile-close></div>
+  <aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__head">
+      <span>Меню</span>
+      <button class="mobile-menu__close" type="button" data-mobile-close>Закрыть</button>
+    </div>
+    <nav class="mobile-nav" aria-label="Мобильное меню">
+        <a class="mobile-nav__link" href="/bystrotruby-site/">Главная</a>
+        <div class="mobile-nav__item">
+          <button class="mobile-nav__toggle" type="button" aria-expanded="false">Решения</button>
+          <div class="mobile-nav__panel">
+            <a class="mobile-nav__all" href="/bystrotruby-site/solutions/">Все: Решения</a>
+            <div class="mobile-nav__group">
+              <div class="mobile-nav__group-title">По задачам</div>
+              <a href="/bystrotruby-site/solutions/dewatering/">Водопонижение</a>
+              <a href="/bystrotruby-site/solutions/water-drainage/">Водоотлив</a>
+              <a href="/bystrotruby-site/solutions/water-supply/">Подача воды</a>
+              <a href="/bystrotruby-site/solutions/dust-suppression/">Пылеподавление</a>
+              <a href="/bystrotruby-site/solutions/slurry-pumping/">Перекачка пульпы</a>
+              <a href="/bystrotruby-site/solutions/sludge-pumping/">Перекачка шламов</a>
+              <a href="/bystrotruby-site/solutions/ash-slag-removal/">Гидрозолоудаление</a>
+              <a href="/bystrotruby-site/solutions/concrete-supply/">Подача бетонной смеси</a>
+              <a href="/bystrotruby-site/solutions/backfill-supply/">Подача закладочной смеси</a>
+              <a href="/bystrotruby-site/solutions/fire-water-supply/">Пожарное водоснабжение</a>
+              <a href="/bystrotruby-site/solutions/snowmaking/">Оснежение</a>
+            </div>
+            <div class="mobile-nav__group">
+              <div class="mobile-nav__group-title">Орошение</div>
+              <a href="/bystrotruby-site/solutions/irrigation-melioration/">Орошение и мелиорация</a>
+              <a href="/bystrotruby-site/solutions/irrigation-melioration/field-irrigation/">Орошение полей</a>
+              <a href="/bystrotruby-site/solutions/irrigation-melioration/irrigation-machines/">Дождевальные машины</a>
+              <a href="/bystrotruby-site/solutions/irrigation-melioration/mobile-irrigation-networks/">Мобильные оросительные сети</a>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-nav__item">
+          <button class="mobile-nav__toggle" type="button" aria-expanded="false">Отрасли</button>
+          <div class="mobile-nav__panel">
+            <a class="mobile-nav__all" href="/bystrotruby-site/industries/">Все: Отрасли</a>
+            <div class="mobile-nav__group">
+              <div class="mobile-nav__group-title">Промышленность</div>
+              <a href="/bystrotruby-site/industries/mining/">Горнодобывающая промышленность</a>
+              <a href="/bystrotruby-site/industries/oil-and-gas/">Нефтегазовая отрасль</a>
+              <a href="/bystrotruby-site/industries/energy/">Энергетика</a>
+              <a href="/bystrotruby-site/industries/metallurgy/">Металлургия</a>
+              <a href="/bystrotruby-site/industries/chemical-industry/">Химическая промышленность</a>
+            </div>
+            <div class="mobile-nav__group">
+              <div class="mobile-nav__group-title">Инфраструктура и хозяйство</div>
+              <a href="/bystrotruby-site/industries/construction/">Строительство</a>
+              <a href="/bystrotruby-site/industries/agriculture/">Сельское хозяйство</a>
+              <a href="/bystrotruby-site/industries/utilities-waterworks/">ЖКХ и Водоканалы</a>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-nav__item">
+          <button class="mobile-nav__toggle" type="button" aria-expanded="false">Конструкции</button>
+          <div class="mobile-nav__panel">
+            <a class="mobile-nav__all" href="/bystrotruby-site/constructions/">Все: Конструкции</a>
+            <div class="mobile-nav__group">
+              <div class="mobile-nav__group-title">По способу соединения</div>
+              <a href="/bystrotruby-site/constructions/brs-pipelines/">Трубопроводы на БРС</a>
+              <a href="/bystrotruby-site/constructions/hinged-clamp-pipelines/">Трубопроводы на шарнирных хомутах</a>
+              <a href="/bystrotruby-site/constructions/bauer-pipelines/">Трубопроводы Bauer</a>
+              <a href="/bystrotruby-site/constructions/camlock-pipelines/">Трубопроводы Camlock</a>
+            </div>
+            <div class="mobile-nav__group">
+              <div class="mobile-nav__group-title">По типу системы</div>
+              <a href="/bystrotruby-site/constructions/quick-release-pipelines/">Быстроразъемные трубопроводы</a>
+              <a href="/bystrotruby-site/constructions/quick-assembly-pipelines/">Быстросборные трубопроводы</a>
+              <a href="/bystrotruby-site/constructions/modular-pipelines/">Сборно-разборные трубопроводы</a>
+              <a href="/bystrotruby-site/constructions/mobile-pipelines/">Мобильные трубопроводы</a>
+              <a href="/bystrotruby-site/constructions/temporary-pipelines/">Временные трубопроводы</a>
+              <a href="/bystrotruby-site/constructions/field-pipelines/">Полевые трубопроводы</a>
+              <a href="/bystrotruby-site/constructions/high-pressure-pipelines/">Высоконапорные трубопроводы</a>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-nav__item">
+          <button class="mobile-nav__toggle" type="button" aria-expanded="false">Материалы труб</button>
+          <div class="mobile-nav__panel">
+            <a class="mobile-nav__all" href="/bystrotruby-site/materials/">Все: Материалы труб</a>
+            <div class="mobile-nav__group">
+              <div class="mobile-nav__group-title">Материалы</div>
+              <a href="/bystrotruby-site/materials/steel-pipes/">Стальные трубы</a>
+              <a href="/bystrotruby-site/materials/galvanized-pipes/">Оцинкованные трубы</a>
+              <a href="/bystrotruby-site/materials/stainless-pipes/">Нержавеющие трубы</a>
+              <a href="/bystrotruby-site/materials/hdpe-pipes/">ПНД трубы</a>
+              <a href="/bystrotruby-site/materials/rubber-hoses/">Резиновые трубы и рукава</a>
+              <a href="/bystrotruby-site/materials/aluminum-pipes/">Алюминиевые трубы</a>
+              <a href="/bystrotruby-site/materials/composite-pipes/">Композитные трубы</a>
+            </div>
+            <div class="mobile-nav__group">
+              <div class="mobile-nav__group-title">Комбинированные</div>
+              <a href="/bystrotruby-site/materials/combined-pipelines/">Комбинированные трубопроводы</a>
+              <a href="/bystrotruby-site/materials/combined-pipelines/steel-hdpe/">Сталь и ПНД</a>
+              <a href="/bystrotruby-site/materials/combined-pipelines/steel-rubber-hoses/">Сталь и резиновые рукава</a>
+              <a href="/bystrotruby-site/materials/combined-pipelines/hdpe-rubber-hoses/">ПНД и резиновые рукава</a>
+              <a href="/bystrotruby-site/materials/combined-pipelines/metal-composite/">Металл и композитные участки</a>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-nav__item">
+          <button class="mobile-nav__toggle" type="button" aria-expanded="false">Каталог</button>
+          <div class="mobile-nav__panel">
+            <a class="mobile-nav__all" href="/bystrotruby-site/catalog/">Все: Каталог</a>
+            <div class="mobile-nav__group">
+              <div class="mobile-nav__group-title">Трубы</div>
+              <a href="/bystrotruby-site/catalog/pipes/">Трубы</a>
+              <a href="/bystrotruby-site/catalog/pipes/du50/">Трубы Ду50</a>
+              <a href="/bystrotruby-site/catalog/pipes/du80/">Трубы Ду80</a>
+              <a href="/bystrotruby-site/catalog/pipes/du100/">Трубы Ду100</a>
+              <a href="/bystrotruby-site/catalog/pipes/du150/">Трубы Ду150</a>
+              <a href="/bystrotruby-site/catalog/pipes/du200/">Трубы Ду200</a>
+              <a href="/bystrotruby-site/catalog/pipes/du250/">Трубы Ду250</a>
+              <a href="/bystrotruby-site/catalog/pipes/du300/">Трубы Ду300</a>
+              <a href="/bystrotruby-site/catalog/pipes/du400/">Трубы Ду400</a>
+            </div>
+            <div class="mobile-nav__group">
+              <div class="mobile-nav__group-title">Соединения</div>
+              <a href="/bystrotruby-site/catalog/quick-couplings/">Быстроразъемные соединения</a>
+              <a href="/bystrotruby-site/catalog/quick-couplings/hinged-clamps/">Шарнирные хомуты</a>
+              <a href="/bystrotruby-site/catalog/quick-couplings/bauer/">Соединения Bauer</a>
+              <a href="/bystrotruby-site/catalog/quick-couplings/camlock/">Соединения Camlock</a>
+              <a href="/bystrotruby-site/catalog/quick-couplings/yoke-couplings/">Бугельные соединения</a>
+              <a href="/bystrotruby-site/catalog/quick-couplings/grooved-couplings/">Соединения Грувлок</a>
+              <a href="/bystrotruby-site/catalog/quick-couplings/victaulic/">Соединения Виктаулик</a>
+            </div>
+            <div class="mobile-nav__group">
+              <div class="mobile-nav__group-title">Фасонные элементы и арматура</div>
+              <a href="/bystrotruby-site/catalog/fittings/">Фасонные элементы</a>
+              <a href="/bystrotruby-site/catalog/fittings/bends/">Отводы</a>
+              <a href="/bystrotruby-site/catalog/fittings/tees/">Тройники</a>
+              <a href="/bystrotruby-site/catalog/fittings/adapters/">Переходы</a>
+              <a href="/bystrotruby-site/catalog/fittings/end-caps/">Заглушки</a>
+              <a href="/bystrotruby-site/catalog/valves/">Арматура</a>
+              <a href="/bystrotruby-site/catalog/valves/check-valves/">Обратные клапаны</a>
+              <a href="/bystrotruby-site/catalog/valves/shutoff-valves/">Запорная арматура</a>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-nav__item">
+          <button class="mobile-nav__toggle" type="button" aria-expanded="false">О компании</button>
+          <div class="mobile-nav__panel">
+            <a class="mobile-nav__all" href="/bystrotruby-site/company/">Все: О компании</a>
+            <div class="mobile-nav__group">
+              <div class="mobile-nav__group-title">Компания</div>
+              <a href="/bystrotruby-site/company/production/">Производство</a>
+              <a href="/bystrotruby-site/company/certificates/">Сертификаты</a>
+              <a href="/bystrotruby-site/company/delivery/">Доставка</a>
+              <a href="/bystrotruby-site/company/payment/">Условия оплаты</a>
+              <a href="/bystrotruby-site/company/contacts/">Контакты</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+  </aside>
 </header>
-<main class="site-main">
-  <div class="container">
-  <nav class="breadcrumbs" aria-label="Хлебные крошки">
+<main class="page">
+  <section class="page-head">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
     <a href="/bystrotruby-site/">Главная</a>
     <span>/</span>
     <a href="/bystrotruby-site/industries/">Отрасли</a>
     <span>/</span>
     <span>Быстроразъемные трубопроводы для горнодобывающей промышленности</span>
-  </nav>
-    <h1>Быстроразъемные трубопроводы для горнодобывающей промышленности</h1>
-    <div class="page-empty" aria-hidden="true"></div>
-  </div>
+      </nav>
+      <h1>Быстроразъемные трубопроводы для горнодобывающей промышленности</h1>
+    </div>
+  </section>
+  <section class="page-layout">
+    <div class="container page-layout__grid">
+        <aside class="section-sidebar">
+          <div class="section-sidebar__title">Отрасли</div>
+          <nav aria-label="Навигация раздела">
+          <a class="section-sidebar__link" href="/bystrotruby-site/industries/">Отрасли</a>
+          <a class="section-sidebar__link is-active" href="/bystrotruby-site/industries/mining/">Горнодобывающая промышленность</a>
+          <a class="section-sidebar__link" href="/bystrotruby-site/industries/construction/">Строительство</a>
+          <a class="section-sidebar__link" href="/bystrotruby-site/industries/agriculture/">Сельское хозяйство</a>
+          <a class="section-sidebar__link" href="/bystrotruby-site/industries/oil-and-gas/">Нефтегазовая отрасль</a>
+          <a class="section-sidebar__link" href="/bystrotruby-site/industries/energy/">Энергетика</a>
+          <a class="section-sidebar__link" href="/bystrotruby-site/industries/utilities-waterworks/">ЖКХ и Водоканалы</a>
+          <a class="section-sidebar__link" href="/bystrotruby-site/industries/metallurgy/">Металлургия</a>
+          <a class="section-sidebar__link" href="/bystrotruby-site/industries/chemical-industry/">Химическая промышленность</a>
+          </nav>
+        </aside>      <article class="page-content">
+        <div class="content-placeholder">Контент страницы будет добавлен позже.</div>
+      </article>
+    </div>
+  </section>
 </main>
 <footer class="site-footer">
   <div class="container footer-main">
+    <div class="footer-brand">
+      <a class="footer-logo" href="/bystrotruby-site/">
+        <img src="/bystrotruby-site/assets/img/logo.webp" alt="Быстроразъемные трубопроводы РФ">
+      </a>
+      <p>Проектирование и поставка быстроразъемных трубопроводов для промышленности</p>
+    </div>
     <div class="footer-col">
       <h2>Основные категории</h2>
       <ul>
@@ -190,7 +439,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <div class="container footer-bottom-inner">
+    <div class="container footer-bottom__inner">
       <nav class="footer-legal" aria-label="Юридические ссылки">
         <a href="/bystrotruby-site/legal/privacy-policy/">Политика конфиденциальности</a>
         <a href="/bystrotruby-site/legal/personal-data-consent/">Согласие на обработку персональных данных</a>
@@ -202,6 +451,21 @@
     </div>
   </div>
 </footer>
+<div class="request-modal" id="request-modal" aria-hidden="true">
+  <div class="request-modal__overlay" data-modal-close></div>
+  <div class="request-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="request-modal-title">
+    <button class="request-modal__close" type="button" data-modal-close aria-label="Закрыть">×</button>
+    <h2 id="request-modal-title">Отправить заказ</h2>
+    <form class="request-form">
+      <label>Телефон<input type="tel" name="phone"></label>
+      <label>Email<input type="email" name="email"></label>
+      <label>Комментарий<textarea name="comment" rows="4"></textarea></label>
+      <input type="hidden" name="page_url">
+      <button class="btn btn-primary" type="submit">Отправить</button>
+      <div class="request-form__message" role="status"></div>
+    </form>
+  </div>
+</div>
 <script src="/bystrotruby-site/assets/js/main.js"></script>
 </body>
 </html>
