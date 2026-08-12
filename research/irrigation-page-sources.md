@@ -1,15 +1,32 @@
-# Источники для страницы «Разборные трубопроводы для полива»
+# Источники для страницы «Разборные трубопроводы для полива и орошения»
 
-Проверено 12 августа 2026 года.
+Проверено 12 августа 2026 года. Технические диапазоны не перенесены на страницу без привязки к конкретному изделию.
 
-- [Irrigation Association — Drip Irrigation Lateral and Submain Configurations](https://www.irrigation.org/IA/FileUploads/IA/Resources/TechnicalPapers/2014/DripIrrigationLateralAndSubmainConfigurationsForFieldAndRowCrops.pdf) — состав систем капельного орошения; применение PE, PVC и плоскосворачиваемых подающих линий.
-- [Irrigation Association — Irrigation Installation & Maintenance](https://www.irrigation.org/IA/Resources/Technical-Resources/Irrigation-Installation-Maintenance/IA/Resources/Irrigation-Installation-Maintenance.aspx) — роль труб, клапанов, насосов и поливного оборудования в системе.
-- [Netafim — Flexible and PE pipes](https://www.netafim.com/en/products-and-solutions/product-offering/flexible-and-pe-pipes/) — применение PE-труб и переносных гибких магистралей в орошении.
-- [Netafim — SprinKit](https://www.netafim.com/en/products-and-solutions/product-offering/Sprinkler-irrigation/sprinkit/) — PE-трубы и гибкие линии в комплектных дождевальных системах.
-- [Netafim — NetaStand for Pre-cut PE Pipes](https://www.netafim.com/en/products-and-solutions/product-offering/sprinkler-stands/netastand-for-pre-cut-pe-pipes/) — быстрая сборка, разборка и повторное использование переносных поливных линий.
-- [Mandals — Agriculture](https://mandals.com/agriculture/) — плоскосворачиваемые рукава как подающие линии для орошения; быстрое развертывание и уборка.
-- [Mandals — Flexitex](https://mandals.com/flexitex/) — гибкие рукава для подачи воды и крупных оросительных установок.
+## Устройство оросительной сети
 
-## Выводы для прототипа
+- [СП 100.13330.2016 «Мелиоративные системы и сооружения»](https://meganorm.ru/Data2/1/4293747/4293747638.htm) — расчет магистральных и распределительных трубопроводов по расходу одновременно работающих ветвей; учет рабочего давления.
+- [ВНИИ «Радуга» — каталог научно-технических разработок](https://vniiraduga.ru/wp-content/uploads/2021/05/katalog-ntd-2020_2.pdf) — типовая цепочка: водоисточник, насосная станция, магистральный и распределительный трубопроводы, гидрант, дождевальная машина.
+- [CAWater-Info — закрытые оросительные системы](https://www.cawater-info.net/bk/4-2-1-4-6.htm) — магистральные, распределительные и полевые трубопроводы; стационарные, переносные и комбинированные решения.
+- [Irrigation Association — Installation & Maintenance](https://www.irrigation.org/IA/Resources/Technical-Resources/Irrigation-Installation-Maintenance/IA/Resources/Irrigation-Installation-Maintenance.aspx) — роль труб, насосов, клапанов и поливного оборудования.
 
-В обзор включены ПНД, стальные разборные и алюминиевые трубы, плоскосворачиваемые рукава и комбинированные линии. Конкретные диапазоны давления и диаметра не приводятся: они зависят от выбранной трубы, соединений, насоса, длины и схемы трассы. БРС, Bauer и Camlock описаны нейтрально как варианты разборного подключения; окончательная совместимость должна подтверждаться при подборе комплекта.
+## Трубы и мобильные линии
+
+- [Netafim — Flexible and PE pipes](https://www.netafim.com/en/products-and-solutions/product-offering/flexible-and-pe-pipes/) — PE-трубы и переносные гибкие магистрали для орошения.
+- [Netafim — SprinKit](https://www.netafim.com/en/products-and-solutions/product-offering/Sprinkler-irrigation/sprinkit/) — PE и гибкие линии в комплектных дождевальных системах.
+- [Mandals — Agriculture](https://mandals.com/agriculture/) — плоскосворачиваемые подающие рукава для сельскохозяйственного орошения.
+- [Irrigation Association — Drip Irrigation Lateral and Submain Configurations](https://www.irrigation.org/IA/FileUploads/IA/Resources/TechnicalPapers/2014/DripIrrigationLateralAndSubmainConfigurationsForFieldAndRowCrops.pdf) — PE, PVC и layflat в подающих и распределительных линиях.
+
+## ПМТ, ПМТП и СРТ
+
+- [ГОСТ Р 42.5.04—2024](https://meganorm.ru/Data/843/84361.pdf) — ПМТП-150 и СРТ перечислены как разные позиции в номенклатуре сборно-разборных трубопроводов.
+- [Исследование демонтажа ПМТП-150](https://moluch.ru/archive/50/6418) — ПМТ как полевой магистральный трубопровод; ПМТП-150 как конкретный комплекс, требующий механизации монтажа и демонтажа.
+- [Описание ПМТП-150 и ТУ изготовителя](https://pmtp.su/pmtp-150-sborno-razbornye-truboprovody.html) — расшифровка ПМТП, раструбное соединение, применение для транспортировки воды и других жидкостей.
+- [FAO AGRIS — эффективность СРТ для орошения](https://agris.fao.org/search/en/providers/122613/records/6474815f79cbb2c2c1b924bf) — СРТ как сборно-разборный трубопровод для орошения, влияние конструкции соединений на прокладку по рельефу.
+
+## Терминологические выводы
+
+- **СРТ** — общее обозначение сборно-разборного трубопровода; конструкция и назначение зависят от конкретного комплекта.
+- **ПМТ** — полевой магистральный трубопровод: сборно-разборный комплекс труб, соединений, арматуры и вспомогательного оборудования.
+- **ПМТП** — полевой магистральный трубопровод повышенной производительности, отдельное поколение/тип комплекса ПМТ. Буква «П» не означает «переносной».
+- ПМТ и ПМТП создавались не исключительно для орошения, но исполнения, разрешенные для транспортировки воды, могут использоваться как временные полевые водоподающие линии. Применимость проверяют по документации конкретного комплекта.
+- В оросительной системе магистраль передает суммарный поток к полю, распределительные трубопроводы разводят его по зонам, а полевые и гибкие участки подключают гидранты и дождевальное оборудование.

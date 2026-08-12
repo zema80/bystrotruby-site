@@ -214,11 +214,23 @@ h1 { max-width: 1050px; margin: 0; font-size: 42px; line-height: 1.15; font-weig
 .photo-placeholder--irrigation { display: grid; min-height: 430px; place-items: center; padding: 36px; border: 1px dashed #8fa8bd; background: #f5f9fc; color: var(--color-primary); font-size: 21px; font-weight: 800; line-height: 1.45; text-align: center; }
 .section-kicker { margin: 0 0 8px; color: var(--color-accent); font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .section-lead { color: var(--color-graphite); font-size: 20px; line-height: 1.55; }
+.overview-subtitle { margin: 30px 0 18px; font-size: 23px; }
+.pipeline-type-grid, .system-flow, .system-explanation { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.pipeline-type-grid > div, .system-flow > div, .system-explanation > div { padding: 20px; border: 1px solid var(--color-line); background: #fff; }
+.pipeline-type-grid strong, .system-flow strong { display: block; color: var(--color-primary); font-size: 18px; }
+.pipeline-type-grid p, .system-flow p, .system-explanation p { margin-bottom: 0; color: var(--color-muted); }
+.system-flow { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.system-flow span { display: block; margin-bottom: 8px; color: var(--color-accent); font-size: 13px; font-weight: 800; }
+.system-explanation { margin-top: 16px; }
+.system-explanation h3 { margin: 0; font-size: 19px; }
 .irrigation-pipe-grid { display: grid; gap: 34px; }
 .pipe-option { display: grid; grid-template-columns: minmax(220px, .72fr) minmax(0, 1.28fr); gap: 28px; padding-top: 28px; border-top: 1px solid var(--color-line); }
 .pipe-option:first-child { padding-top: 0; border-top: 0; }
 .pipe-option .product-card__image, .product-placeholder { width: 100%; min-height: 250px; max-height: 310px; object-fit: contain; }
 .product-placeholder, .mini-placeholder { display: grid; place-items: center; padding: 20px; border: 1px dashed #9bb0c2; background: #f5f9fc; color: var(--color-muted); font-weight: 700; text-align: center; }
+.registry-placeholder span { display: grid; gap: 7px; }
+.registry-placeholder b { color: var(--color-accent); font-size: 12px; letter-spacing: .1em; }
+.registry-placeholder small { color: var(--color-muted); font-size: 12px; font-weight: 700; }
 .pipe-option h3 { margin-top: 0; font-size: 25px; }
 .pipe-option dl { display: grid; grid-template-columns: 140px 1fr; gap: 8px 14px; margin: 20px 0; }
 .pipe-option dt { color: var(--color-primary); font-weight: 800; }
@@ -254,11 +266,12 @@ h1 { max-width: 1050px; margin: 0; font-size: 42px; line-height: 1.15; font-weig
   .irrigation-hero .commercial-hero__content, .irrigation-hero .photo-placeholder { min-width: 0; }
   .page-layout__grid.commercial-layout { grid-template-columns: 1fr; }
   .commercial-toc { position: static; }
-  .pipe-option, .hinged-clamp-feature { grid-template-columns: 1fr; }
+  .pipe-option, .hinged-clamp-feature, .system-flow { grid-template-columns: 1fr; }
   .irrigation-scheme { display: grid; grid-template-columns: 1fr; }
   .irrigation-scheme i { justify-self: center; transform: rotate(90deg); }
 }
 @media (max-width: 768px) {
+  .pipeline-type-grid, .system-explanation { grid-template-columns: 1fr; }
   .hero-benefits--compact { grid-template-columns: 1fr; }
   .photo-placeholder--irrigation { min-height: 280px; }
   .pipe-option .product-card__image, .product-placeholder { min-height: 210px; }
