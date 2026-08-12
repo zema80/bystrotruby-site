@@ -42,26 +42,26 @@
 ## Применение — /bystrotruby-site/solutions/
 ### Подача и отвод воды
 - Водоснабжение — /bystrotruby-site/solutions/water-supply/
-- Водоотведение — /bystrotruby-site/solutions/wastewater/
+- Водоотведение — #
 - Водоотлив и водопонижение — /bystrotruby-site/solutions/dewatering/
 - Орошение и полив — /bystrotruby-site/solutions/irrigation-melioration/
 - Пожарное водоснабжение — /bystrotruby-site/solutions/fire-water-supply/
-- Промышленное охлаждение — /bystrotruby-site/solutions/industrial-cooling/
+- Промышленное охлаждение — #
 ### Перекачка и гидротранспорт
-- Перекачка воды — /bystrotruby-site/solutions/water-pumping/
+- Перекачка воды — #
 - Перекачка пульпы — /bystrotruby-site/solutions/slurry-pumping/
 - Перекачка шлама — /bystrotruby-site/solutions/sludge-pumping/
-- Гидротранспорт — /bystrotruby-site/solutions/hydraulic-transport/
+- Гидротранспорт — #
 - Гидрозолоудаление — /bystrotruby-site/solutions/ash-slag-removal/
 ### Гидромеханизация
-- Намыв — /bystrotruby-site/solutions/reclamation/
-- Дноуглубление — /bystrotruby-site/solutions/dredging/
+- Намыв — #
+- Дноуглубление — #
 ### Ремонт и временные линии
-- Байпасирование трубопроводов — /bystrotruby-site/solutions/bypass/
-- Временные линии при ремонте — /bystrotruby-site/solutions/temporary-repair-lines/
-- Аварийные трубопроводы — /bystrotruby-site/solutions/emergency-pipelines/
-- Испытание и опрессовка — /bystrotruby-site/solutions/pressure-testing/
-- Промывка и очистка — /bystrotruby-site/solutions/flushing-cleaning/
+- Байпасирование трубопроводов — #
+- Временные линии при ремонте — #
+- Аварийные трубопроводы — #
+- Испытание и опрессовка — #
+- Промывка и очистка — #
 ### Другие применения
 - Пылеподавление — /bystrotruby-site/solutions/dust-suppression/
 - Искусственное оснежение — /bystrotruby-site/solutions/snowmaking/
