@@ -22,13 +22,13 @@ button, input, textarea { font: inherit; }
 .social-links { display: flex; gap: 8px; }
 .social-links a { display: inline-flex; min-height: 34px; align-items: center; padding: 6px 10px; border: 1px solid var(--color-line); border-radius: 6px; color: var(--color-muted); font-size: 14px; }
 .menubar { background: var(--color-graphite); }
+.main-nav { position: relative; }
 .nav-list { display: flex; align-items: stretch; }
-.nav-item { position: relative; }
+.nav-item { position: static; }
 .nav-link { display: flex; align-items: center; min-height: 54px; padding: 0 18px; color: #fff; font-weight: 700; }
 .nav-link:hover, .nav-link:focus-visible, .has-mega:hover > .nav-link, .has-mega:focus-within > .nav-link { color: #fff; background: rgba(255,255,255,.1); }
-.mega-menu { position: absolute; left: 0; top: 100%; width: min(960px, calc(100vw - 48px)); padding: 18px; border: 1px solid var(--color-line); border-radius: 0 0 8px 8px; background: #fff; box-shadow: var(--shadow); opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(8px); transition: opacity .16s ease, transform .16s ease, visibility .16s ease; }
+.mega-menu { position: absolute; left: 0; top: 100%; width: min(960px, calc(100vw - 24px)); max-width: calc(100vw - 24px); padding: 18px; border: 1px solid var(--color-line); border-radius: 0 0 8px 8px; background: #fff; box-shadow: var(--shadow); opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(8px); transition: opacity .16s ease, transform .16s ease, visibility .16s ease; }
 .has-mega:hover .mega-menu, .has-mega:focus-within .mega-menu { opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); }
-.has-mega:nth-last-child(-n+2) .mega-menu { left: auto; right: 0; }
 .mega-menu__tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; border-bottom: 1px solid var(--color-line); padding-bottom: 12px; }
 .mega-menu__tab { border: 1px solid var(--color-line); background: var(--color-soft); color: var(--color-text); border-radius: 6px; padding: 8px 12px; cursor: pointer; }
 .mega-menu__tab.is-active { color: #fff; border-color: var(--color-primary); background: var(--color-primary); }
