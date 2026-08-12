@@ -205,3 +205,63 @@ h1 { max-width: 1050px; margin: 0; font-size: 42px; line-height: 1.15; font-weig
 @media (max-width: 1180px) { .commercial-hero__grid, .system-layout { grid-template-columns: 1fr; } .commercial-hero__visual { min-height: 0; } }
 @media (max-width: 900px) { .home-hero__grid, .feature-grid, .link-card-grid, .steps-grid, .info-grid--two, .parameter-list, .system-scheme, .kpi-grid, .supply-grid, .wide-image figcaption, .icon-list, .hero-offer, .intent-grid, .factor-grid, .link-card-grid--balanced { grid-template-columns: 1fr; } .commercial-cta { align-items: flex-start; flex-direction: column; } .comparison-table > div { grid-template-columns: 1fr; } .comparison-table > div > div + div { border-left: 0; border-top: 1px solid var(--color-line); } }
 @media (max-width: 768px) { .home-hero { padding: 34px 0 28px; } .home-hero__grid { gap: 28px; } .home-hero__lead { font-size: 17px; } .home-hero__actions .btn { width: 100%; } .commercial-hero { padding: 30px 0; } .commercial-hero__lead { font-size: 17px; } .commercial-section h2, .commercial-cta h2 { font-size: 24px; } .pipe-visual { grid-template-columns: 1fr; } .pipe-visual__line { width: 12px; height: 42px; justify-self: center; } }
+
+/* Irrigation application prototype */
+.commercial-content { min-width: 0; }
+.commercial-content > * { min-width: 0; }
+.irrigation-hero .commercial-hero__grid { align-items: stretch; }
+.hero-benefits--compact { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 650px; }
+.photo-placeholder--irrigation { display: grid; min-height: 430px; place-items: center; padding: 36px; border: 1px dashed #8fa8bd; background: #f5f9fc; color: var(--color-primary); font-size: 21px; font-weight: 800; line-height: 1.45; text-align: center; }
+.section-kicker { margin: 0 0 8px; color: var(--color-accent); font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.section-lead { color: var(--color-graphite); font-size: 20px; line-height: 1.55; }
+.irrigation-pipe-grid { display: grid; gap: 34px; }
+.pipe-option { display: grid; grid-template-columns: minmax(220px, .72fr) minmax(0, 1.28fr); gap: 28px; padding-top: 28px; border-top: 1px solid var(--color-line); }
+.pipe-option:first-child { padding-top: 0; border-top: 0; }
+.pipe-option .product-card__image, .product-placeholder { width: 100%; min-height: 250px; max-height: 310px; object-fit: contain; }
+.product-placeholder, .mini-placeholder { display: grid; place-items: center; padding: 20px; border: 1px dashed #9bb0c2; background: #f5f9fc; color: var(--color-muted); font-weight: 700; text-align: center; }
+.pipe-option h3 { margin-top: 0; font-size: 25px; }
+.pipe-option dl { display: grid; grid-template-columns: 140px 1fr; gap: 8px 14px; margin: 20px 0; }
+.pipe-option dt { color: var(--color-primary); font-weight: 800; }
+.pipe-option dd { margin: 0; color: var(--color-muted); }
+.irrigation-table-wrap { width: 100%; max-width: 100%; overflow-x: auto; border: 1px solid var(--color-line); }
+.irrigation-table { width: 100%; min-width: 780px; border-collapse: collapse; font-size: 14px; line-height: 1.45; }
+.irrigation-table th, .irrigation-table td { padding: 13px 12px; border-right: 1px solid var(--color-line); border-bottom: 1px solid var(--color-line); text-align: left; vertical-align: top; }
+.irrigation-table thead th { background: var(--color-primary); color: #fff; }
+.irrigation-table tbody th { color: var(--color-primary); }
+.note-text { color: var(--color-muted); font-size: 14px; }
+.connection-list { display: grid; border-top: 1px solid var(--color-line); }
+.connection-list a { display: grid; grid-template-columns: minmax(190px, .55fr) minmax(0, 1.45fr); gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--color-line); color: var(--color-text); }
+.connection-list strong { color: var(--color-primary); font-size: 18px; }
+.connection-list span { color: var(--color-muted); }
+.hinged-clamp-feature { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(260px, .75fr); gap: 36px; align-items: center; padding: 36px; border-left: 5px solid var(--color-accent); background: var(--color-soft); }
+.feature-product-image { display: block; width: 100%; max-height: 320px; object-fit: contain; }
+.check-list { display: grid; gap: 8px; padding-left: 20px; }
+.supply-card { color: var(--color-text); }
+.supply-card .mini-placeholder { aspect-ratio: 4 / 3; }
+.irrigation-scheme { display: flex; align-items: stretch; gap: 8px; margin: 26px 0; }
+.irrigation-scheme div { display: grid; min-width: 0; flex: 1; align-content: center; gap: 7px; padding: 18px 10px; border-top: 3px solid var(--color-accent); background: var(--color-soft); text-align: center; }
+.irrigation-scheme span { color: var(--color-accent); font-size: 12px; font-weight: 800; }
+.irrigation-scheme i { align-self: center; color: var(--color-accent); font-size: 22px; font-style: normal; }
+.selection-section .parameter-list { margin-bottom: 26px; }
+.parameter-list > div { display: grid; gap: 5px; }
+.parameter-list span { color: var(--color-muted); font-size: 14px; }
+.subsection-title { margin-top: 48px; }
+.industry-links { display: flex; flex-wrap: wrap; gap: 10px; }
+.industry-links a { padding: 12px 16px; border: 1px solid var(--color-line); color: var(--color-primary); font-weight: 700; }
+
+@media (max-width: 900px) {
+  .irrigation-hero .commercial-hero__grid { grid-template-columns: minmax(0, 1fr); }
+  .irrigation-hero .commercial-hero__content, .irrigation-hero .photo-placeholder { min-width: 0; }
+  .page-layout__grid.commercial-layout { grid-template-columns: 1fr; }
+  .commercial-toc { position: static; }
+  .pipe-option, .hinged-clamp-feature { grid-template-columns: 1fr; }
+  .irrigation-scheme { display: grid; grid-template-columns: 1fr; }
+  .irrigation-scheme i { justify-self: center; transform: rotate(90deg); }
+}
+@media (max-width: 768px) {
+  .hero-benefits--compact { grid-template-columns: 1fr; }
+  .photo-placeholder--irrigation { min-height: 280px; }
+  .pipe-option .product-card__image, .product-placeholder { min-height: 210px; }
+  .pipe-option dl, .connection-list a { grid-template-columns: 1fr; gap: 5px; }
+  .hinged-clamp-feature { padding: 24px 18px; }
+}
