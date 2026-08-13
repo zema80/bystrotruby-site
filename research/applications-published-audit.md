@@ -33,7 +33,7 @@
 - Создано заново 10 страниц: wastewater, industrial-cooling, water-pumping, hydraulic-transport, reclamation, dredging, temporary-repair-lines, emergency-pipelines, pressure-testing, flushing-cleaning.
 - Переработано 10 существующих страниц из content-файлов.
 - Страница bypass сохранена в существующем рабочем виде.
-- На 20 переработанных/созданных страницах размещено по три текстовых placeholders: всего 60. На dewatering используются существующие изображения; bypass оставлен без изменений.
+- На 20 переработанных/созданных страницах размещено по пять текстовых placeholders: всего 100. Они обозначают HERO, PROCESS, SCHEME, PRODUCT и CONNECTION. На dewatering используются существующие изображения; bypass оставлен без изменений.
 - Все новые и переработанные страницы имеют один H1, уникальные title/description/canonical, breadcrumbs, фактический TOC, FAQ и WebPage/BreadcrumbList/FAQPage.
 - Product и Offer не использовались.
 
