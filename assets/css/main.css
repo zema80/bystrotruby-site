@@ -290,3 +290,4 @@ h1 { max-width: 1050px; margin: 0; font-size: 42px; line-height: 1.15; font-weig
   .pipe-option dl, .connection-list a { grid-template-columns: 1fr; gap: 5px; }
   .hinged-clamp-feature { padding: 24px 18px; }
 }
+.content-image-placeholder{margin:24px 0;padding:28px;border:1px dashed #8aa6bd;background:#f6f9fb;color:#17324d}.content-image-placeholder strong,.content-image-placeholder span{display:block}.content-image-placeholder span{margin-top:6px;font-size:13px;color:#527089}.content-image-placeholder p{margin:10px 0 0}.content-status{display:inline-block;margin:14px 0 4px;padding:4px 9px;border:1px solid #b8c9d6;color:#405d73;font-size:12px;letter-spacing:.04em}.application-page .page-head p{max-width:900px}.application-page .commercial-section ol li{margin-bottom:10px}

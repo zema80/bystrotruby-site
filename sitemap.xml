@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>/bystrotruby-site/</loc></url>
   <url><loc>/bystrotruby-site/solutions/</loc></url>
@@ -93,4 +93,6 @@
   <url><loc>/bystrotruby-site/legal/disclaimer/</loc></url>
   <url><loc>/bystrotruby-site/sitemap/</loc></url>
   <url><loc>/bystrotruby-site/sitemap.xml</loc></url>
+  <url><loc>/bystrotruby-site/solutions/wastewater/</loc></url>
+  <url><loc>/bystrotruby-site/solutions/industrial-cooling/</loc></url>
 </urlset>
