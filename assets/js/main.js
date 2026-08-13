@@ -66,6 +66,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   const tocLinks = document.querySelectorAll('.commercial-toc__link[href^="#"]');
+  const irrigationToc = document.querySelector('.irrigation-toc');
+  const irrigationTocToggle = document.querySelector('.irrigation-toc__toggle');
+  if (irrigationToc && irrigationTocToggle) {
+    irrigationTocToggle.addEventListener('click', () => {
+      const open = irrigationToc.classList.toggle('is-open');
+      irrigationTocToggle.setAttribute('aria-expanded', String(open));
+    });
+  }
   const tocSections = Array.from(tocLinks)
     .map((link) => document.querySelector(link.getAttribute('href')))
     .filter(Boolean);
@@ -76,6 +84,10 @@ document.addEventListener('DOMContentLoaded', () => {
       event.preventDefault();
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       history.replaceState(null, '', link.getAttribute('href'));
+      if (irrigationToc && window.matchMedia('(max-width: 1024px)').matches) {
+        irrigationToc.classList.remove('is-open');
+        if (irrigationTocToggle) irrigationTocToggle.setAttribute('aria-expanded', 'false');
+      }
     });
   });
   if (tocLinks.length && 'IntersectionObserver' in window) {
