@@ -14,8 +14,9 @@
 | Водоотлив и водопонижение | Иглофильтры | dewatering-process | Иглофильтровый коллектор, вакуумный насос и сброс | PROCESS | HIGH | EXISTS: `assets/img/solutions/dewatering/diagram-wellpoint.webp` |
 | Водоотлив и водопонижение | БРС | dewatering-connection | Шарнирный хомут на трубной секции | CONNECTION | MEDIUM | EXISTS: `assets/img/solutions/dewatering/brs-hinged-clamp-coupling.webp` |
 | Орошение и полив | Первый экран | irrigation-hero | Полевой трубопровод и дождевальная машина | HERO | HIGH | NEEDED |
-| Орошение и полив | Распределение | irrigation-process | Водозабор, насос, магистраль, гидранты и поле | PROCESS | HIGH | NEEDED |
-| Орошение и полив | Полевые секции | irrigation-product | Алюминиевые/стальные секции и гидрант | PRODUCT | MEDIUM | NEEDED |
+| Орошение и полив | Схема сети | irrigation-network-scheme | Источник, насосная, магистраль, распределитель, гидранты и три типа дождевальных машин | SCHEME | HIGH | NEEDED |
+| Орошение и полив | Типы труб | irrigation-pipe-types | ПНД, стальная секция, алюминиевая быстросборная труба и плоскосворачиваемый рукав | PRODUCT | HIGH | NEEDED |
+| Орошение и полив | Соединения | irrigation-connections | Муфта алюминиевой трубы, БРС стальной секции и адаптер к гидранту | CONNECTION | MEDIUM | NEEDED |
 | Пожарное водоснабжение | Первый экран | fire-water-hero | Наружная промышленная пожарная сеть и гидрант | HERO | HIGH | NEEDED |
 | Пожарное водоснабжение | Резервирование | fire-water-scheme | Резервуар, насосы, кольцевая сеть и гидранты | SCHEME | HIGH | NEEDED |
 | Промышленное охлаждение | Первый экран | cooling-hero | Временный контур охлаждающей воды у оборудования | HERO | HIGH | NEEDED |
