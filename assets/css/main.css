@@ -375,3 +375,34 @@ h1 { max-width: 1050px; margin: 0; font-size: 42px; line-height: 1.15; font-weig
 @media (max-width: 1180px) { .irrigation-materials { grid-template-columns: repeat(3,minmax(0,1fr)); } }
 @media (max-width: 1024px) { .irrigation-quick__grid { grid-template-columns: 1fr; } .irrigation-toc { padding: 0; } .irrigation-toc__toggle { display: flex; width: 100%; justify-content: space-between; border: 0; padding: 14px 16px; color: #fff; background: var(--color-graphite); font-weight: 800; } .irrigation-toc__toggle::after { content: '+'; } .irrigation-toc.is-open .irrigation-toc__toggle::after { content: '−'; } .irrigation-toc__nav { display: none; padding: 8px; } .irrigation-toc.is-open .irrigation-toc__nav { display: block; } .field-feature { grid-template-columns: 1fr; } }
 @media (max-width: 768px) { .irrigation-commercial .commercial-content { gap: 40px; } .irrigation-commercial .commercial-section { padding-bottom: 40px; } .irrigation-hero-product { min-height: 330px; padding: 20px; border-left: 0; } .irrigation-hero-placeholder { min-height: 270px; } .irrigation-price strong { font-size: 30px; } .equipment-strip, .term-row, .irrigation-kit, .selection-steps, .irrigation-layout-types, .irrigation-materials { grid-template-columns: 1fr; } .equipment-strip article + article { border-left: 0; border-top: 1px solid var(--color-line); } .irrigation-product { grid-template-columns: 1fr; padding: 16px; } .irrigation-product img, .irrigation-product .product-placeholder { height: 220px; } .irrigation-product dl { grid-template-columns: 1fr; } .irrigation-product dd { margin-bottom: 6px; } .hinged-clamp-feature { grid-template-columns: 1fr; } .kit-flow { display: grid; grid-template-columns: 1fr; } .kit-flow i { justify-self: center; transform: rotate(90deg); } .irrigation-price-section { align-items: flex-start; flex-direction: column; padding: 26px 20px !important; } }
+
+/* Fire-water commercial landing: restrained palette, no emergency-service styling */
+.fire-water-commercial { --color-accent: var(--color-primary-dark); }
+.fire-water-commercial .commercial-section { padding-bottom: 52px; border-bottom: 1px solid var(--color-line); scroll-margin-top: 24px; }
+.fire-hero-visual { display: grid; min-height: 470px; align-content: center; margin: 0; padding: 32px; background: var(--color-soft); }
+.fire-hero-visual figcaption { margin-top: 18px; color: var(--color-muted); font-size: 13px; text-align: center; }
+.fire-scope { padding: 24px 0; color: #fff; background: var(--color-graphite); }
+.fire-scope__grid { display: grid; grid-template-columns: minmax(220px,.55fr) minmax(0,1.45fr); gap: 30px; align-items: center; }
+.fire-scope strong { font-size: 20px; }
+.fire-scope p { margin: 0; color: rgba(255,255,255,.78); }
+.fire-boundary-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; }
+.fire-boundary-grid article { padding: 26px; border-top: 4px solid var(--color-line); background: var(--color-soft); }
+.fire-boundary-grid article.is-offer { border-color: var(--color-primary); }
+.fire-boundary-grid span { color: var(--color-primary); font-weight: 800; }
+.fire-boundary-grid h3 { margin: 8px 0; }
+.fire-boundary-grid p { color: var(--color-muted); }
+.fire-guardrail { margin-top: 20px; padding: 18px 20px; border-left: 4px solid var(--color-primary); background: var(--color-soft); }
+.fire-flow { display: grid; grid-template-columns: repeat(9,minmax(0,auto)); gap: 8px; align-items: center; }
+.fire-flow div { display: grid; min-height: 150px; align-content: center; gap: 6px; padding: 15px; border: 1px solid var(--color-line); text-align: center; }
+.fire-flow div.is-supply { border-color: var(--color-primary); background: var(--color-soft); }
+.fire-flow span { color: var(--color-primary); font-size: 12px; font-weight: 800; }
+.fire-flow small { color: var(--color-muted); line-height: 1.35; }
+.fire-flow i { color: var(--color-primary); font-size: 22px; font-style: normal; }
+.fire-kit { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1px; padding: 1px; background: var(--color-line); }
+.fire-kit article { padding: 22px; background: #fff; }
+.fire-kit strong { color: var(--color-primary); font-size: 18px; }
+.fire-kit p { margin-bottom: 0; color: var(--color-muted); font-size: 14px; }
+.source-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.source-links a { padding: 11px 14px; border: 1px solid var(--color-line); color: var(--color-primary); font-weight: 700; }
+@media (max-width: 1180px) { .fire-flow { grid-template-columns: 1fr; } .fire-flow i { justify-self: center; transform: rotate(90deg); } }
+@media (max-width: 768px) { .fire-scope__grid, .fire-boundary-grid, .fire-kit { grid-template-columns: 1fr; } .fire-hero-visual { min-height: 300px; padding: 20px; } }
