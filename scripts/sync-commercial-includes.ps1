@@ -8,7 +8,7 @@ $pagePath = Join-Path $projectRoot $Page
 $encoding = [System.Text.UTF8Encoding]::new($false)
 $html = [System.IO.File]::ReadAllText($pagePath, $encoding)
 
-foreach ($name in @("application-links", "catalog-links")) {
+foreach ($name in @("application-links", "catalog-links", "final-cta")) {
     $includePath = Join-Path $projectRoot "includes/$name.html"
     $fragment = [System.IO.File]::ReadAllText($includePath, $encoding).Trim()
     $start = "<!-- include:${name}:start -->"
