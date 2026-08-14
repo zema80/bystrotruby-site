@@ -23,6 +23,10 @@
 | IRRIGATION-BRS-SCHEME-001 | Орошение и полив | БРС соединения | Комбинированная трасса: стальная секция, БРС, адаптер к ПНД, ПНД-участок, адаптер и гибкий рукав | SCHEME | 16:9, landscape | NEEDED | — |
 | IRRIGATION-BRS-WEDGE-001 | Орошение и полив | Исполнения БРС | Шарнирный хомут с клиновым замком на нейтральном фоне | PRODUCT | 4:3, landscape | NEEDED | — |
 | IRRIGATION-BRS-BOLT-001 | Орошение и полив | Исполнения БРС | Шарнирный хомут с болтовым стягиванием на нейтральном фоне | PRODUCT | 4:3, landscape | NEEDED | — |
+| IRRIGATION-TYPE-UNDERGROUND-001 | /solutions/irrigation-melioration/ | Типы трубопроводов | Подземная оросительная магистраль с гидрантом на поле | APPLICATION | 4:3, landscape | NEEDED | — |
+| IRRIGATION-TYPE-SECTIONAL-001 | /solutions/irrigation-melioration/ | Типы трубопроводов | Разборная поверхностная линия из жестких секций на поле | APPLICATION | 4:3, landscape | NEEDED | — |
+| IRRIGATION-TYPE-FLEXIBLE-001 | /solutions/irrigation-melioration/ | Типы трубопроводов | Гибкий плоскосворачиваемый рукав сезонной оросительной линии | APPLICATION | 4:3, landscape | NEEDED | — |
+| IRRIGATION-KIT-ADAPTER-001 | /solutions/irrigation-melioration/ | Комплектация | Соединительный адаптер для подключения оборудования или разных типов подготовленных концов | PRODUCT | 4:3, landscape | NEEDED | — |
 | FIRE-WATER-HERO-001 | Пожарное водоснабжение | Первый экран | Временная наземная разборная линия подачи воды от насосного оборудования к месту пожаротушения; без подмены рукавной линией или стационарной сетью | HERO | 16:9, landscape | NEEDED | — |
 | FIRE-WATER-KIT-001 | Пожарное водоснабжение | Комплект поставки | Совместимые трубные секции, соединения, фасонные части, арматура и адаптеры временной линии на нейтральном фоне | PRODUCT_SET | 4:3, landscape | NEEDED | — |
 | Пожарное водоснабжение | Первый экран | fire-water-hero | Наружная промышленная пожарная сеть и гидрант | HERO | HIGH | NEEDED |

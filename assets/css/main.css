@@ -441,6 +441,70 @@ h1 { max-width: 1050px; margin: 0; font-size: 42px; line-height: 1.15; font-weig
 @media (max-width: 768px) { .irrigation-brs__scenarios, .irrigation-brs__closures { grid-template-columns: 1fr; } .irrigation-brs__footer { align-items: flex-start; flex-direction: column; } }
 @media (max-width: 640px) { .irrigation-situations__intro { display: block; } .irrigation-situations__list, .irrigation-network-copy, .shared-link-list, .shared-link-list--catalog, .irrigation-brs__benefits { grid-template-columns: 1fr; } .irrigation-brs__compatibility { grid-template-columns: 1fr; } .irrigation-brs__compatibility > span { min-height: 58px; } .irrigation-brs__closures article { grid-template-columns: 1fr; } }
 
+/* Irrigation visual landing composition */
+.irrigation-commercial .page-layout { padding-top: 0; }
+.irrigation-commercial .commercial-layout { display: block; }
+.irrigation-commercial .commercial-content { gap: 0; }
+.irrigation-commercial .commercial-section { padding: 64px 0; }
+.irrigation-toc { position: sticky; top: 0; z-index: 25; margin: 0 -24px 28px; padding: 10px 24px; border-width: 0 0 1px; border-radius: 0; box-shadow: 0 8px 20px rgba(21,34,54,.06); }
+.irrigation-toc__nav { display: flex; align-items: center; gap: 2px; overflow-x: auto; scrollbar-width: thin; }
+.irrigation-toc .commercial-toc__link { flex: 0 0 auto; padding: 9px 11px; font-size: 14px; }
+#system { display: grid; grid-template-columns: minmax(0,1.08fr) minmax(360px,.92fr); column-gap: 42px; align-items: start; }
+#system > .section-kicker { grid-column: 1; grid-row: 1; }
+#system > h2 { grid-column: 1; grid-row: 2; }
+#system > .section-lead { grid-column: 1; grid-row: 3; margin-bottom: 0; }
+#system > .irrigation-network-placeholder { grid-column: 2; grid-row: 1 / 4; min-height: 100%; margin: 0; }
+#system > .irrigation-network-copy, #system > .irrigation-flow, #system > .irrigation-supply-note, #system > .system-explanation { grid-column: 1 / -1; }
+#system > .irrigation-network-copy { margin-top: 36px; }
+.irrigation-layout-types article { display: flex; min-height: 100%; flex-direction: column; padding: 0 24px 24px; overflow: hidden; }
+.irrigation-layout-types .type-placeholder { min-height: 180px; margin: 0 -24px 22px; padding: 20px; background: #edf4f9; }
+.irrigation-layout-types article > dl { margin-top: auto; }
+.irrigation-materials { grid-template-columns: 1fr; gap: 1px; }
+.irrigation-materials div { display: grid; grid-template-columns: minmax(170px,.32fr) minmax(0,1fr); align-items: center; gap: 24px; padding: 16px 20px; }
+.irrigation-materials p { margin: 0; }
+.irrigation-products { grid-template-columns: repeat(2,minmax(0,1fr)); align-items: stretch; }
+.irrigation-product { grid-template-columns: 1fr; grid-template-rows: 250px 1fr; align-items: stretch; padding: 0; overflow: hidden; }
+.irrigation-product > img, .irrigation-product > .product-placeholder { height: 250px; min-height: 250px; margin: 0; padding: 20px; }
+.irrigation-product > div:last-child { display: flex; flex-direction: column; padding: 24px; }
+.irrigation-product .product-link { margin-top: auto; padding-top: 12px; }
+.irrigation-brs { padding: 48px; }
+.irrigation-brs__header { grid-template-columns: minmax(330px,.82fr) minmax(0,1.18fr); }
+.irrigation-brs__product { grid-column: 1; grid-row: 1; }
+.irrigation-brs__header > div { grid-column: 2; }
+.irrigation-brs__benefits { grid-template-columns: repeat(5,minmax(0,1fr)); }
+.irrigation-brs__closures { margin-top: 0; }
+.irrigation-kit { grid-template-columns: repeat(4,minmax(0,1fr)); }
+.irrigation-kit a { grid-template-rows: 180px auto auto; min-height: 300px; }
+.irrigation-kit img, .irrigation-kit .kit-placeholder { width: 100%; height: 180px; min-height: 180px; padding: 14px; object-fit: contain; background: var(--color-soft); }
+.catalog-columns { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 1px; padding: 1px; background: var(--color-line); }
+.catalog-columns section { display: grid; align-content: start; gap: 10px; padding: 24px; background: #fff; }
+.catalog-columns h3 { margin: 0 0 8px; color: var(--color-primary); font-size: 20px; }
+.catalog-columns a { color: var(--color-text); }
+.catalog-columns a:hover, .catalog-columns a:focus-visible { color: var(--color-primary); text-decoration: underline; }
+.shared-link-list a { min-height: 96px; }
+.irrigation-commercial .commercial-cta { margin-top: 64px; border-radius: 0; background: #152236; }
+@media (max-width: 1180px) {
+  #system { grid-template-columns: 1fr; }
+  #system > .section-kicker, #system > h2, #system > .section-lead, #system > .irrigation-network-placeholder, #system > .irrigation-network-copy, #system > .irrigation-flow, #system > .irrigation-supply-note, #system > .system-explanation { grid-column: 1; grid-row: auto; }
+  #system > .irrigation-network-placeholder { min-height: 300px; margin-top: 24px; }
+  .irrigation-brs__benefits { grid-template-columns: repeat(3,minmax(0,1fr)); }
+}
+@media (max-width: 1024px) {
+  .irrigation-toc { position: sticky; top: 0; margin: 0 0 24px; padding: 0; }
+  .irrigation-toc__nav { display: none; }
+  .irrigation-toc.is-open .irrigation-toc__nav { display: block; }
+  .catalog-columns { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 768px) {
+  .irrigation-commercial .commercial-section { padding: 44px 0; }
+  .irrigation-products, .irrigation-brs__header, .irrigation-brs__benefits { grid-template-columns: 1fr; }
+  .irrigation-brs { padding: 28px 18px; }
+  .irrigation-brs__product, .irrigation-brs__header > div { grid-column: 1; grid-row: auto; }
+  .irrigation-brs__product { order: -1; }
+  .irrigation-materials div { grid-template-columns: 1fr; gap: 6px; }
+}
+@media (max-width: 560px) { .catalog-columns { grid-template-columns: 1fr; } }
+
 /* Fire-water commercial landing: restrained palette, no emergency-service styling */
 .fire-water-commercial { --color-accent: var(--color-primary-dark); }
 .fire-water-commercial .commercial-section { padding-bottom: 52px; border-bottom: 1px solid var(--color-line); scroll-margin-top: 24px; }
