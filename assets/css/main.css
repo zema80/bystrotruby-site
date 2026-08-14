@@ -324,7 +324,7 @@ h1 { max-width: 1050px; margin: 0; font-size: 42px; line-height: 1.15; font-weig
 .irrigation-quick ul { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
 .irrigation-quick li { padding: 8px 11px; border: 1px solid rgba(255,255,255,.22); border-radius: 999px; font-size: 13px; }
 .irrigation-toc__toggle { display: none; }
-.irrigation-flow { display: grid; grid-template-columns: repeat(9, minmax(0,auto)); gap: 8px; align-items: center; }
+.irrigation-flow { display: grid; grid-template-columns: repeat(11, minmax(0,1fr)); gap: 8px; align-items: center; }
 .irrigation-flow div { display: grid; min-height: 142px; align-content: center; gap: 5px; padding: 15px; border: 1px solid var(--color-line); background: #fff; text-align: center; }
 .irrigation-flow div.is-supply { border-color: var(--color-primary); background: var(--color-soft); }
 .irrigation-flow span { color: var(--color-accent); font-size: 12px; font-weight: 800; }
@@ -375,6 +375,31 @@ h1 { max-width: 1050px; margin: 0; font-size: 42px; line-height: 1.15; font-weig
 @media (max-width: 1180px) { .irrigation-materials { grid-template-columns: repeat(3,minmax(0,1fr)); } }
 @media (max-width: 1024px) { .irrigation-quick__grid { grid-template-columns: 1fr; } .irrigation-toc { padding: 0; } .irrigation-toc__toggle { display: flex; width: 100%; justify-content: space-between; border: 0; padding: 14px 16px; color: #fff; background: var(--color-graphite); font-weight: 800; } .irrigation-toc__toggle::after { content: '+'; } .irrigation-toc.is-open .irrigation-toc__toggle::after { content: '−'; } .irrigation-toc__nav { display: none; padding: 8px; } .irrigation-toc.is-open .irrigation-toc__nav { display: block; } .field-feature { grid-template-columns: 1fr; } }
 @media (max-width: 768px) { .irrigation-commercial .commercial-content { gap: 40px; } .irrigation-commercial .commercial-section { padding-bottom: 40px; } .irrigation-hero-product { min-height: 330px; padding: 20px; border-left: 0; } .irrigation-hero-placeholder { min-height: 270px; } .irrigation-price strong { font-size: 30px; } .equipment-strip, .term-row, .irrigation-kit, .selection-steps, .irrigation-layout-types, .irrigation-materials { grid-template-columns: 1fr; } .equipment-strip article + article { border-left: 0; border-top: 1px solid var(--color-line); } .irrigation-product { grid-template-columns: 1fr; padding: 16px; } .irrigation-product img, .irrigation-product .product-placeholder { height: 220px; } .irrigation-product dl { grid-template-columns: 1fr; } .irrigation-product dd { margin-bottom: 6px; } .hinged-clamp-feature { grid-template-columns: 1fr; } .kit-flow { display: grid; grid-template-columns: 1fr; } .kit-flow i { justify-self: center; transform: rotate(90deg); } .irrigation-price-section { align-items: flex-start; flex-direction: column; padding: 26px 20px !important; } }
+
+/* Irrigation commercial architecture: situation first, reusable navigation blocks */
+.irrigation-situations { padding: 34px 0; color: #fff; background: var(--color-graphite); }
+.irrigation-commercial .hero-benefits li::before { background: var(--color-primary); }
+.irrigation-commercial .registry-placeholder { display: grid; place-items: center; text-align: center; }
+.irrigation-situations .section-kicker { color: #b9d9ee; }
+.irrigation-situations__intro { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 22px; }
+.irrigation-situations__intro h2 { margin: 0; font-size: 28px; }
+.irrigation-situations__list { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1px; margin: 0; padding: 1px; list-style: none; background: rgba(255,255,255,.22); }
+.irrigation-situations__list li { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: start; min-height: 92px; padding: 20px; background: var(--color-graphite); line-height: 1.45; }
+.irrigation-situations__list span { color: #b9d9ee; font-size: 12px; font-weight: 800; }
+.irrigation-network-copy { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; margin: 28px 0; }
+.irrigation-network-copy > div { padding: 22px; border-top: 3px solid var(--color-primary); background: var(--color-soft); }
+.irrigation-network-copy h3 { margin: 0 0 10px; font-size: 19px; }
+.irrigation-network-copy p { margin: 0; color: var(--color-muted); }
+.irrigation-network-placeholder { display: grid; min-height: 190px; place-items: center; margin: 28px 0; padding: 24px; border: 1px dashed #8fa8bd; background: #f5f9fc; text-align: center; }
+.shared-link-list { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 1px; padding: 1px; background: var(--color-line); }
+.shared-link-list a { display: grid; grid-template-columns: 42px 1fr; gap: 12px; align-items: center; min-height: 78px; padding: 16px; color: var(--color-text); background: #fff; }
+.shared-link-list a:hover, .shared-link-list a:focus-visible { color: var(--color-primary); background: var(--color-soft); }
+.shared-link-list span { display: grid; width: 40px; height: 40px; place-items: center; border: 1px solid var(--color-primary); color: var(--color-primary); font-size: 20px; }
+.shared-link-list--catalog { grid-template-columns: repeat(5,minmax(0,1fr)); }
+.selection-steps small { display: block; margin-top: 4px; color: var(--color-muted); font-weight: 400; line-height: 1.4; }
+.selection-cta { margin-top: 24px; }
+@media (max-width: 1024px) { .irrigation-situations__list, .irrigation-network-copy { grid-template-columns: repeat(2,minmax(0,1fr)); } .shared-link-list, .shared-link-list--catalog { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 640px) { .irrigation-situations__intro { display: block; } .irrigation-situations__list, .irrigation-network-copy, .shared-link-list, .shared-link-list--catalog { grid-template-columns: 1fr; } }
 
 /* Fire-water commercial landing: restrained palette, no emergency-service styling */
 .fire-water-commercial { --color-accent: var(--color-primary-dark); }
